@@ -1,0 +1,229 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_ticket
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240725\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-27 11:16+0000\n"
+"PO-Revision-Date: 2024-07-27 11:16+0000\n"
+"Last-Translator: <Youssef Ezzamarty>\n"
+"Language-Team: <www.electrochips.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: helpdesk_ticket
+#: model:ir.actions.report,print_report_name:helpdesk_ticket.action_report_helpdesk_ticket
+msgid "'Helpdesk Ticket Report - %s' % (object.ticket_number)"
+msgstr "'Rapport de Ticket Helpdesk - %s' % (object.ticket_number)"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.report_helpdesk_ticket_document
+msgid "<strong>Customer:</strong>"
+msgstr "<strong>Client :</strong>"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.report_helpdesk_ticket_document
+msgid "<strong>Problem Description:</strong>"
+msgstr "<strong>Description du Problème :</strong>"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.report_helpdesk_ticket_document
+msgid "<strong>Solution Description:</strong>"
+msgstr "<strong>Description de la Solution :</strong>"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.report_helpdesk_ticket_document
+msgid "<strong>Status:</strong>"
+msgstr "<strong>État :</strong>"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.report_helpdesk_ticket_document
+msgid "<strong>Technician:</strong>"
+msgstr "<strong>Technicien :</strong>"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.report_helpdesk_ticket_document
+msgid "Company Logo"
+msgstr "Logo de l'Entreprise"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,help:helpdesk_ticket.field_helpdesk_ticket__state
+msgid "Current status of the ticket."
+msgstr "État actuel du ticket."
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__customer_id
+msgid "Customer"
+msgstr "Client"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__customer_phone
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.view_helpdesk_ticket_search
+msgid "Customer Phone"
+msgstr "Téléphone du Client"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,help:helpdesk_ticket.field_helpdesk_ticket__customer_id
+msgid "Customer reporting the issue."
+msgstr "Client signalant le problème."
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,help:helpdesk_ticket.field_helpdesk_ticket__problem_description
+msgid "Detailed description of the reported issue."
+msgstr "Description détaillée du problème signalé."
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,help:helpdesk_ticket.field_helpdesk_ticket__solution_description
+msgid "Detailed description of the solution applied."
+msgstr "Description détaillée de la solution appliquée."
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__display_name
+msgid "Display Name"
+msgstr "Nom à Afficher"
+
+#. module: helpdesk_ticket
+#: model:ir.ui.menu,name:helpdesk_ticket.menu_helpdesk_root
+msgid "Helpdesk"
+msgstr "Helpdesk"
+
+#. module: helpdesk_ticket
+#: model:ir.model,name:helpdesk_ticket.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Ticket Helpdesk"
+
+#. module: helpdesk_ticket
+#: model:ir.actions.report,name:helpdesk_ticket.action_report_helpdesk_ticket
+msgid "Helpdesk Ticket Report"
+msgstr "Rapport de Ticket Helpdesk"
+
+#. module: helpdesk_ticket
+#: model:res.groups,name:helpdesk_ticket.group_helpdesk_user
+msgid "Helpdesk User"
+msgstr "Utilisateur Helpdesk"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__id
+msgid "ID"
+msgstr "ID"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields.selection,name:helpdesk_ticket.selection__helpdesk_ticket__state__in_progress
+msgid "In Progress"
+msgstr "En Cours"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__write_uid
+msgid "Last Updated by"
+msgstr "Dernière Mise à Jour par"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__write_date
+msgid "Last Updated on"
+msgstr "Dernière Mise à Jour le"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields.selection,name:helpdesk_ticket.selection__helpdesk_ticket__state__new
+msgid "New"
+msgstr "Nouveau"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.view_helpdesk_ticket_form
+msgid "Print Report"
+msgstr "Imprimer le Rapport"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__problem_description
+msgid "Problem Description"
+msgstr "Description du Problème"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields.selection,name:helpdesk_ticket.selection__helpdesk_ticket__state__resolved
+msgid "Resolved"
+msgstr "Résolu"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields.selection,name:helpdesk_ticket.selection__helpdesk_ticket__state__review
+msgid "Review"
+msgstr "Révision"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.view_helpdesk_ticket_search
+msgid "Search Ticket"
+msgstr "Rechercher un Ticket"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__solution_description
+msgid "Solution Description"
+msgstr "Description de la Solution"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.view_helpdesk_ticket_form
+msgid "Start Work"
+msgstr "Commencer le Travail"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__state
+msgid "Status"
+msgstr "État"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.actions.act_window,help:helpdesk_ticket.action_helpdesk_ticket
+msgid "Technical support tickets."
+msgstr "Tickets de support technique."
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__technician_id
+msgid "Technician"
+msgstr "Technicien"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,help:helpdesk_ticket.field_helpdesk_ticket__technician_id
+msgid "Technician assigned to resolve the issue."
+msgstr "Technicien assigné pour résoudre le problème."
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.view_helpdesk_ticket_form
+msgid "Ticket"
+msgstr "Ticket"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_ticket.field_helpdesk_ticket__ticket_number
+msgid "Ticket No."
+msgstr "Num. de Ticket"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.view_helpdesk_ticket_search
+msgid "Ticket Number"
+msgstr "Numéro de Ticket"
+
+#. module: helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.report_helpdesk_ticket_document
+msgid "Ticket:"
+msgstr "Ticket :"
+
+#. module: helpdesk_ticket
+#: model:ir.actions.act_window,name:helpdesk_ticket.action_helpdesk_ticket
+#: model:ir.ui.menu,name:helpdesk_ticket.menu_helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket.view_helpdesk_ticket_tree
+msgid "Tickets"
+msgstr "Tickets"
+
+#. module: helpdesk_ticket
+#: model:ir.model.fields,help:helpdesk_ticket.field_helpdesk_ticket__ticket_number
+msgid "Unique ticket number."
+msgstr "Numéro unique du ticket."

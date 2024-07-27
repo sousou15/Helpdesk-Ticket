@@ -1,0 +1,93 @@
+<odoo>
+    <!-- List view -->
+    <record id="view_helpdesk_ticket_tree" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.tree</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <tree string="Tickets">
+                <field name="ticket_number"/>
+                <field name="customer_id"/>
+                <field name="technician_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view -->
+    <record id="view_helpdesk_ticket_form" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.form</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <form string="Ticket">
+            <header>
+                <button name="action_start_work" string="Start Work" class="oe_highlight" type="object"/>
+                <button name="action_print_report" string="Print Report" type="object" class="btn-primary"/>
+                <field name="state" widget="statusbar"/>
+                <!-- No need for readonly with the widget. Already immutable. The use of it causes an error. -->
+            </header>
+                <sheet>
+                    <group>
+                        <field name="ticket_number" readonly="1"/>
+                        <field name="customer_id"/>
+                        <field name="technician_id"/>
+                        <field name="problem_description"/>
+                        <field name="solution_description"/>
+                        <!-- <field name="state" readonly="1"/> -->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Kanban view -->
+    <record id="view_helpdesk_ticket_kanban" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.kanban</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_record_title">
+                                <field name="ticket_number"/>
+                            </div>
+                            <div class="o_kanban_record_details">
+                                <field name="customer_id"/>
+                                <field name="state"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Search view -->
+    <record id="view_helpdesk_ticket_search" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.search</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <search string="Search Ticket">
+                <field name="ticket_number" string="Ticket Number"/>
+                <field name="customer_phone" string="Customer Phone"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_helpdesk_ticket" model="ir.actions.act_window">
+        <field name="name">Tickets</field>
+        <field name="res_model">helpdesk.ticket</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="help">Technical support tickets.</field>
+    </record>
+
+    <!-- Main menu -->
+    <menuitem id="menu_helpdesk_root" name="Helpdesk" sequence="10"/>
+
+    <!-- Submenu for tickets -->
+    <menuitem id="menu_helpdesk_ticket" 
+              name="Tickets"
+              parent="menu_helpdesk_root"
+              action="action_helpdesk_ticket"
+              sequence="10"/>
+</odoo>
